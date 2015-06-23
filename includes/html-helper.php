@@ -33,8 +33,14 @@ class HTML_Helper
 
     public function print_select($selectTagArr)
     {
+        echo '<select>';
 
+        foreach($selectTagArr as $value2)
+        {
+            echo '<option value="' . $value2 . '">' . $value2 . '</option>';
+        }
 
+        echo '</select>';
     }
 }
 
